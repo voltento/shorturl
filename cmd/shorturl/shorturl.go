@@ -11,7 +11,7 @@ func main() {
 		err = app.Start()
 	}
 	if err != nil {
-		log.Fatalf("Got fatal error on start applications. Error: %v", err.Error())
+		log.Fatalw("Got fatal error on start applications", "Error", err.Error())
 	}
 
 	log.Infof("Application started.")
