@@ -10,7 +10,6 @@ func getLogger() *zap.SugaredLogger {
 	if logger == nil {
 		logger = zap.NewExample().Sugar()
 	}
-	logger.Error()
 	return logger
 }
 
